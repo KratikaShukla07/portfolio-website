@@ -58,3 +58,4 @@ npm run build
 ---
 
 Built with ❤️ by Kratika Shukla
+Updated by Kratika
