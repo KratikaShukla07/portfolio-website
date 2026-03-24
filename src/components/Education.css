@@ -1,0 +1,120 @@
+.education {
+  background: var(--bg-secondary);
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.edu-material-card {
+  display: flex;
+  gap: 1.5rem;
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.edu-material-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.edu-icon-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.edu-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.edu-degree {
+  font-size: 1.35rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.edu-period {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.edu-institution {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.edu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px dashed var(--border);
+  padding-top: 1rem;
+}
+
+.edu-location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-tertiary);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.edu-location svg {
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+.edu-grade {
+  font-weight: 700;
+  font-family: 'Product Sans', sans-serif;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .edu-material-card {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .edu-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .edu-period {
+    margin-left: 0;
+  }
+}
